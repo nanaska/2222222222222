@@ -7,7 +7,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        // Простая 8-рядная сетка
+        '8': 'repeat(18, minmax(0, 1fr))',
+
+
+        'layout': 'minmax(150px, 1fr)',
+      }
+    }
   },
   plugins:
       [

@@ -339,8 +339,8 @@ export default function Delivery() {
         ]
     ]
     return (
-        <Container maxWidth={1580}>
-            <div className="flex flex-col md:m-7 items-center justify-between">
+
+            <div className="flex flex-col  items-center justify-between">
                 <div className="mr-auto my-3 font-bold text-[32px] md:text-[48px]">
                     Зона доставки
                 </div>
@@ -363,34 +363,34 @@ export default function Delivery() {
                         }}/>
                     </Map>
                 </YMaps>
-                <div className="flex flex-col mr-auto">
-                    <div className="mr-auto my-3 font-bold text-[32px] md:text-[48px]">
-                        Зона доставки
-                    </div>
-                    <div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto autem dolor ex
-                            exercitationem, explicabo fuga fugiat in libero nobis, numquam odio rerum sequi temporibus,
-                            tenetur vero voluptas? Corporis, soluta.
-                        </div>
-                        <div>A aspernatur consectetur culpa cupiditate impedit incidunt laborum, quis temporibus
-                            veritatis voluptates? Autem doloribus eveniet laboriosam reiciendis repellendus. Consequatur
-                            dolor ipsam labore perspiciatis rem. Dicta eligendi esse nesciunt quam sed!
-                        </div>
-                        <div>Accusantium debitis excepturi fuga ipsum perferendis quaerat, tempore! Assumenda cumque,
-                            cupiditate ea expedita fuga illum iusto labore minima minus, modi nam obcaecati placeat quo
-                            quod repellendus reprehenderit sed sunt tempore!
-                        </div>
-                        <div>Deserunt, id repudiandae. Amet architecto beatae delectus dolore ducimus fugit id impedit
-                            in ipsum magni necessitatibus nesciunt omnis, possimus praesentium quaerat quis quo
-                            repudiandae suscipit tempora vitae voluptas voluptate voluptatum.
-                        </div>
-                        <div>Aspernatur blanditiis fugit ipsa iste iusto minus nam, pariatur sunt temporibus velit.
-                            Dolores eveniet minima quasi quia quod! Expedita mollitia, quas. Deserunt eum in inventore
-                            nam odit quia repudiandae voluptates.
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="flex flex-col mr-auto">*/}
+                {/*    <div className="mr-auto my-3 font-bold text-[32px] md:text-[48px]">*/}
+                {/*        Зона доставки*/}
+                {/*    </div>*/}
+                {/*    <div>*/}
+                {/*        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto autem dolor ex*/}
+                {/*            exercitationem, explicabo fuga fugiat in libero nobis, numquam odio rerum sequi temporibus,*/}
+                {/*            tenetur vero voluptas? Corporis, soluta.*/}
+                {/*        </div>*/}
+                {/*        <div>A aspernatur consectetur culpa cupiditate impedit incidunt laborum, quis temporibus*/}
+                {/*            veritatis voluptates? Autem doloribus eveniet laboriosam reiciendis repellendus. Consequatur*/}
+                {/*            dolor ipsam labore perspiciatis rem. Dicta eligendi esse nesciunt quam sed!*/}
+                {/*        </div>*/}
+                {/*        <div>Accusantium debitis excepturi fuga ipsum perferendis quaerat, tempore! Assumenda cumque,*/}
+                {/*            cupiditate ea expedita fuga illum iusto labore minima minus, modi nam obcaecati placeat quo*/}
+                {/*            quod repellendus reprehenderit sed sunt tempore!*/}
+                {/*        </div>*/}
+                {/*        <div>Deserunt, id repudiandae. Amet architecto beatae delectus dolore ducimus fugit id impedit*/}
+                {/*            in ipsum magni necessitatibus nesciunt omnis, possimus praesentium quaerat quis quo*/}
+                {/*            repudiandae suscipit tempora vitae voluptas voluptate voluptatum.*/}
+                {/*        </div>*/}
+                {/*        <div>Aspernatur blanditiis fugit ipsa iste iusto minus nam, pariatur sunt temporibus velit.*/}
+                {/*            Dolores eveniet minima quasi quia quod! Expedita mollitia, quas. Deserunt eum in inventore*/}
+                {/*            nam odit quia repudiandae voluptates.*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
             </div>
-        </Container>)
+        )
 }

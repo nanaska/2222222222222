@@ -12,10 +12,13 @@ import {
 
 
 import {useState} from "react";
+import {setMenuFilter} from "../slices/menuSlice";
+import {useDispatch} from "react-redux";
 
 export default function DrawerHamburger() {
     const {isOpen, onOpen, onClose} = useDisclosure()
     const [placement, setPlacement] = useState('left')
+    const dispatch = useDispatch()
     return (
         <div className="md:hidden">
 
@@ -51,8 +54,8 @@ export default function DrawerHamburger() {
                                     </div>
                                 </summary>
                                 <div className="pl-6 pr-2 flex flex-col ">
-                                    <span className="my-2 text-[16px]">Пицца</span>
-                                    <span className="my-2 text-[16px]">Суши</span>
+                                    <span onClick={() => {dispatch(setMenuFilter(1))}} className="my-2 text-[16px]">Пицца</span>
+                                    <span onClick={() => {dispatch(setMenuFilter(2))}} className="my-2 text-[16px]">Суши</span>
                                     <span className="my-2 text-[16px]">Горячее</span>
                                 </div>
                             </details>

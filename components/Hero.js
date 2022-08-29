@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 import HeroImage from "../public/HeroImage.png"
 
 export default function Hero(){
-    return(<div className=" md:mt-0">
+    return(<div className="mt-0 mb-0 md:mt-0">
 
 
 
@@ -29,8 +29,8 @@ export default function Hero(){
             }}
             pagination={{ clickable: true, color: "#FFD2B0" }}
 
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => {}}
+            onSlideChange={() => {}}
         >
             <SwiperSlide>
                 <Image src={HeroImage} width={3840} height={1280}/>
