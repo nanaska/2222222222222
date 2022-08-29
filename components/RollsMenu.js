@@ -1,17 +1,8 @@
 import {useEffect, useState} from "react";
-import ItemCart from "../components/itemCart";
+import ItemCart from "./itemCart";
 import {useDispatch, useSelector} from "react-redux";
 import {clearFilter1, doFilter1} from "../slices/busketSlice"
-import {
-    Button,
-    Checkbox,
-    Popover,
-    PopoverBody,
-    PopoverContent,
-    PopoverTrigger,
-    Portal,
-    Stack, Text, useCheckboxGroup,
-} from "@chakra-ui/react";
+
 
 
 

@@ -1,30 +1,24 @@
 import {useEffect, useState} from "react";
-import ItemCart from "../components/itemCart";
+import ItemCart from "./itemCart";
 import {useDispatch, useSelector} from "react-redux";
 import {clearFilter, doFilter} from "../slices/busketSlice"
 import {
-    Button,
-    Checkbox,
     Popover,
     PopoverBody,
     PopoverContent,
     PopoverTrigger,
     Portal,
-    Stack, Text, useCheckboxGroup,
 } from "@chakra-ui/react";
 
 
 
 export default function PizzaMenu() {
     const [content, setContent] = useState([])
-    const [pizzaFilterType, setPizzaFilterType] = useState(null)
-    const [relevant, setRelevant] = useState([])
     const dispatch = useDispatch()
     const {filters} = useSelector(state => state.busketSlice)
     function filterFunction(filterType) {
 
         if (filterType === 0) {
-
             dispatch(clearFilter())
         }
         if (filterType > 0) {

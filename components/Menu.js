@@ -1,12 +1,11 @@
-import PizzaMenu from "../MenuTypes/PizzaMenu";
-import RollsMenu from "../MenuTypes/RollsMenu"
+import PizzaMenu from "./PizzaMenu";
+import RollsMenu from "./RollsMenu"
 import {useEffect, useState} from "react";
 import CardForPhoneMenu from "./CardForPhoneMenu";
 import { useSelector} from "react-redux";
 import {AnimatePresence, motion} from "framer-motion";
 
 export default function Menu() {
-    const [menu, setMenu] = useState(0)
     const [width, setWidth] = useState()
 
 
