@@ -11,7 +11,6 @@ export default function Navbar() {
     const router = useRouter()
     const [notMenu, setNotMenu] = useState(true)
     useEffect(()=>{
-        console.log(router.pathname)
         if(router.pathname == "/"){
             setNotMenu(false)
         }else {setNotMenu(true)}

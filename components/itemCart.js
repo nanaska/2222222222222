@@ -19,9 +19,9 @@ export default function ItemCart({id, title,price,img,description, weight}){
         <AnimatePresence>
 
         <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0}}
             animate={{ opacity: 1}}
-            transition={{duration: .5}}
+            transition={{duration: .2}}
             exit={{ opacity: 0 }}
              className="flex relative     2xl:p-0   md:hover:shadow-2xl h-full w-full  rounded  flex-row md:flex-col items-center justify-center">
         <div className="flex items-center   justify-center w-[50%] md:w-full">
