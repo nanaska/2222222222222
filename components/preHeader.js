@@ -1,6 +1,6 @@
 export default function PreHeader(){
     return(
-        <div className="w-full  flex sm:items-center  justify-center sm:justify-start">
+        <div className="w-full hidden md:flex  sm:items-center  justify-center sm:justify-start">
         <ul className=" space-x-1   md:space-x-6 text-[12px] md:text-[16px] items-center justify-center flex p-2  text-center ">
             <li className="flex items-center justify-center w-fit">
                 <span className="pr-0.5 md:pr-2">
