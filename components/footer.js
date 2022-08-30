@@ -10,44 +10,31 @@ export default function Footer() {
                 <Container
                     className=" flex flex-col  md:flex-row  items-center text-center md:text-start md:items-start  justify-center"
                     maxWidth={1580}>
-                    <div className="backdrop-blur rounded p-4  flex flex-col md:flex-row">
-                        <div className="p-2 flex  flex-col  justify-center">
-                            <div className="text-[24px] flex items-center justify-center">МЕНЮ</div>
-                            <div className="flex space-x-4">
-                                <ul>
-                                    <li className='cursor-pointer'>Пицца</li>
+                    <div className=" rounded p-4  flex flex-col md:flex-row">
+                        <div className="p-2 flex flex-col  justify-start">
+                            <div className="text-[24px] flex items-center justify-center mb-4">МЕНЮ</div>
+                            <div className=" space-x-4">
+                                <ul className="grid grid-cols-2 gap-2">
+                                    <li className='cursor-pointer py-0.5 font-[500]'>Пицца</li>
+                                    <li className='cursor-pointer py-0.5 font-[500]'>Пицца</li>
                                 </ul>
-                                <ul>
-                                    <li>Пицца</li>
-                                </ul>
+
                             </div>
                         </div>
 
 
                         <div className="divider divider-horizontal md:divider-horizontal w-[1%]"></div>
-                        <div className="p-2 flex flex-col  justify-center">
-                            <div className="text-[24px] flex items-center justify-center">МЕНЮ</div>
-                            <div className="flex space-x-4">
-                                <ul>
-                                    <li className='cursor-pointer'>Пицца</li>
+                        <div className="p-2 flex flex-col  justify-start">
+                            <div className="text-[24px] flex items-center justify-center mb-4">МЕНЮ</div>
+                            <div className="flex flex-col space-x-4">
+                                <ul className="grid grid-cols-1 gap-2">
+                                    <li className='cursor-pointer font-[500]'>Пицца</li>
+                                    <li className='cursor-pointer font-[500]'>Пицца</li>
                                 </ul>
-                                <ul>
-                                    <li>Пицца</li>
-                                </ul>
+
                             </div>
                         </div>
-                        <div className="divider divider-horizontal md:divider-horizontal  w-[1%]"></div>
-                        <div className="p-2 flex flex-col  justify-center">
-                            <div className="text-[24px] flex items-center justify-center">МЕНЮ</div>
-                            <div className="flex space-x-4">
-                                <ul>
-                                    <li className='cursor-pointer'>Пицца</li>
-                                </ul>
-                                <ul>
-                                    <li>Пицца</li>
-                                </ul>
-                            </div>
-                        </div>
+
                     </div>
                 </Container>
             </div>

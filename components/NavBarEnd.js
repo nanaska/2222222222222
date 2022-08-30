@@ -10,11 +10,11 @@ export default function NavBarEnd(){
         <div
             className="hover:bg-base-300 flex flex-row items-center justify-center rounded p-2 cursor-pointer">
             <div className="flex  flex items-center justify-center">
-                <div className="absolute ml-5 mb-5 z-20">
+                {items.length > 0  && <div className="absolute ml-5 mb-5 z-20">
                     <div
                         className="rounded-[90px] px-[7px] py-[0px]  bg-orange-300 text-white">{totalCount}</div>
 
-                </div>
+                </div>}
                 <Image className="" src={Garbage} height={40} width={40}/>
             </div>
             <a className=" flex items-center justify-center text-xl font-medium">Корзина</a>
