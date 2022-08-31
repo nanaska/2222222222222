@@ -66,17 +66,7 @@ export default function Navbar() {
                                 <PopoverContent p={0} m={0}>
 
                                     <PopoverBody p={0} m={0}>
-                                        <ul className=" grid select-none grid-cols-1  items-center place-items-center shadow bg-white border-none  ">
-                                            <li className="text-[18px] py-2 cursor-pointer hover:underline">
-                                                <span
-                                                    className="text-[18px] py-2 cursor-pointer hover:underline">Контакты</span>
-                                            </li>
-                                            <LinkToVacation/>
-                                            <li className="text-[18px] py-2 cursor-pointer hover:underline">
-                                                <span className="text-[18px] py-2 cursor-pointer hover:underline">О компании</span>
-                                            </li>
-
-                                        </ul>
+                                        <LinkToVacation/>
                                     </PopoverBody>
 
                                 </PopoverContent>
