@@ -3,6 +3,7 @@ import ItemCart from "./itemCart";
 import {useDispatch, useSelector} from "react-redux";
 import {clearFilter, doFilter} from "../slices/busketSlice"
 import {
+    CircularProgress,
     Popover,
     PopoverBody,
     PopoverContent,
@@ -120,7 +121,14 @@ export default function PizzaMenu() {
                 </Portal>
             </Popover>
         </div>
-        <div
+        {content.length == 0 && <div
+            className="flex items-center justify-center min-h-150px">
+           <div> <CircularProgress value={30}  className="animate-spin "  color='orange.400' size='120px' /></div>
+
+
+        </div>
+}
+        {content.length > 0 && <div
             className="grid grid-cols-1 gap-4 mt-4 min-h-[200px] place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5">
 
 
@@ -130,6 +138,6 @@ export default function PizzaMenu() {
                            price={content.price} title={content.title} weight={content.weight}/>))}
 
 
-        </div>
+        </div>}
     </>)
 }
