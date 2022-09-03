@@ -75,6 +75,14 @@ export default function PizzaMenu() {
     const [typeFilter1, setTypeFilter1] = useState(false)
     const [typeFilter2, setTypeFilter2] = useState(false)
     const [typeFilter3, setTypeFilter3] = useState(false)
+    useEffect(()=>{
+        if(typeFilter1 && typeFilter2 && typeFilter3){
+            setTypeFilters(true)
+            setTypeFilter1(false)
+            setTypeFilter2(false)
+            setTypeFilter3(false)
+        }
+    },[typeFilters,typeFilter1,typeFilter2,typeFilter3])
     return (<>
 
         <div className="md:p-3 flex flex-row items-center justify-between">
