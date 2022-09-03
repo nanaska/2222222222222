@@ -7,13 +7,15 @@ export default async function handler(req, res) {
             filterType: {
                 some: {
                     name: {
-                       in: newData
+                        in: newData
                     }
                 }
             },
             type: {
-                name: {in: req.body.producttype
-            }},
+                name: {
+                    in: req.body.producttype
+                }
+            },
 
 
         },

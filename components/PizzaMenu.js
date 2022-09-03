@@ -82,6 +82,9 @@ export default function PizzaMenu() {
             setTypeFilter2(false)
             setTypeFilter3(false)
         }
+        if(!typeFilter1 && !typeFilter2 && !typeFilter3){
+            setTypeFilters(true)
+        }
     },[typeFilters,typeFilter1,typeFilter2,typeFilter3])
     return (<>
 
