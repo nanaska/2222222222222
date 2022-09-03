@@ -36,14 +36,14 @@ export default function Navbar() {
                                     <PopoverBody p={0} m={0}>
                                         <ul className=" grid select-none grid-cols-2 mt-3  items-center place-items-center shadow bg-white border-none  ">
                                             <li className="bg-white p-3 ">
-                                                <Link to="PizzaMenu" spy={true} smooth={true} offset={-60}
+                                                <Link to="PizzaMenu" spy={true} smooth={true} offset={-80}
                                                       duration={500}>
                                                     <span
                                                         className="text-[18px] cursor-pointer hover:underline">Пицца</span>
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link to="RollsMenu" spy={true} smooth={true} offset={-60}
+                                                <Link to="RollsMenu" spy={true} smooth={true} offset={-80}
                                                       duration={500}>
                                                     <span
                                                         className="text-[18px] cursor-pointer hover:underline">Роллы</span>
