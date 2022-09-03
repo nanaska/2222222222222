@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import BusketItem from "./BusketItem";
 import {clearItems} from "../slices/busketSlice";
 import Image from "next/image";
-import { useRef, useState} from "react";
+import {useState} from "react";
 import {motion} from "framer-motion";
 import {useForm} from "react-hook-form";
 import {
