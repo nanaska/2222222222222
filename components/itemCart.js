@@ -31,8 +31,8 @@ export default function ItemCart({id, title,price,img,description, weight}){
             <span className="font-[400] text-[18px] text-[#CBCBCB]">{weight} Г</span>
         </div>
         <div className="flex  items-center justify-center flex-col pr-2 w-[50%] md:w-full">
-            <div className="flex  items-center font-normals justify-center whitespace-nowrap text-center md:text-center font-normal sm:text-[32px] text-[24px]">{title}</div>
-            <p className="flex text-center items-center text-start py-3 justify-start text-[18px] text-[#868484] min-h-[50px]">{description}</p>
+            <div className="flex  items-center font-normals justify-center whitespace-nowrap text-center md:text-center font-normal sm:text-[32px] text-[24px]"><h3>{title}</h3></div>
+            <p className="flex text-center items-center text-start py-3 justify-start text-[18px] text-[#868484] min-h-[50px]"><h4>{description}</h4></p>
             <div className="grid grid-cols-2 place-items-center ">
                 <div className="md:p-3   sm:ml-0 sm:px-4 flex items-center justify-center whitespace-nowrap rounded text-[#313131] sm:text-[28px] text-[24px]">{price} ₽</div>
                 <div className="outline outline-2 outline-[#FF8932] md:my-1 whitespace-nowrap  sm:px-4 p-2 text-black  duration-75 active:scale-105 select-none  sm:py-1 flex justify-center sm:p-5  items-center hover:bg-[#FF8932] rounded-[90px]" onClick={()=> onClickAdd(id,title,price,img) }>Выбрать {count}</div>
