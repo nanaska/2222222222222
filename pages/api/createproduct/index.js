@@ -18,12 +18,13 @@ export default async function handler(req, res) {
                 }
             },
             filterType: {
-                create: {
-                    name: req.body.filtertype
-                }
-            },
+                create: req.body.filtertypee
+            }
         }
+
+
     })
+
     prisma.$disconnect()
     res.status(200).json(product)
 }

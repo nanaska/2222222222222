@@ -1,4 +1,3 @@
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["metrics"]
@@ -35,4 +34,3 @@ model FilterType {
     name Int
     product Product[]
 }
-
